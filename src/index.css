@@ -627,3 +627,37 @@ footer {
   padding-right: 1rem;
   text-align: right;
 }
+
+.order-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.order-page-left {
+  width: 30%;
+}
+
+.order-page-right {
+  width: 69%;
+}
+
+.order-item {
+  background-color: #D9D9D9;
+  width: 33%;
+  /* width: 20rem; */
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem
+}
+
+.order-image {
+  /* height: 100%; */
+  width: 80%;
+}
+
+.catagory-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
