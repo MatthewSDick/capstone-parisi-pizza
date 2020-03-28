@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
 import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
+import PizzaPage from './pages/PizzaPage'
+import CartPage from './pages/CartPage'
 
 const App = () => {
   return (
     <Router>
-      <header>
+      {/* <header>
         <h1>Welcome to my SPA</h1>
         <nav>
           <ul>
@@ -23,11 +23,11 @@ const App = () => {
             </li>
           </ul>
         </nav>
-      </header>
+      </header> */}
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/1" component={Page}></Route>
-        <Route exact path="/2" component={Page2}></Route>
+        <Route exact path="/pizza" component={PizzaPage}></Route>
+        <Route exact path="/cart" component={CartPage}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
