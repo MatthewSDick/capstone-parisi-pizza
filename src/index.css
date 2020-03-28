@@ -31,8 +31,11 @@ body {
   color: white;
   border: 0;
   margin-bottom: 1rem;
+  font-size: 1rem;
+  font: bold;
   width: 7rem;
   height: 3rem;
+  border-radius: 25px;
 }
 
 .top-checkout {
@@ -40,6 +43,8 @@ body {
   color: white;
   border: 0;
   margin-left: 1rem;
+  border-radius: 25px;
+  height: 1.5rem;
 }
 
 .top-wrapper {

@@ -44,7 +44,7 @@ const HelloWorld = () => {
               <li class="top-items">Items</li>
               <li class="top-money">$ 0.00</li>
               <li>
-                <button class="top-checkout">Order Online</button>
+                <button class="top-checkout">Checkout</button>
               </li>
             </ul>
           </div>
