@@ -41,3 +41,91 @@ Orders
 -- Order Time
 -- Completed
 -- Out For Delivery
+
+Old Cart
+
+      <div className="cart-page">
+        <div className="cart-table">
+          <div id="resp-table">
+            {/* <div id="resp-table-caption">Responsive Table without Table tag</div> */}
+            <div id="resp-table-header">
+              <div className="table-header-cell"></div>
+              <div className="table-header-cell"></div>
+              <div className="table-header-cell">Product</div>
+              <div className="table-header-cell">Price</div>
+              <div className="table-header-cell">Quantity</div>
+              <div className="table-header-cell">Total</div>
+            </div>
+            <div id="resp-table-body">
+              <div className="resp-table-row"></div>
+              <div className="table-body-cell">X</div>
+              <div className="table-body-cell">Image</div>
+              <div className="table-body-cell">Product</div>
+              <div className="table-body-cell">$12.95</div>
+              <div className="table-body-cell">
+                {' '}
+                <input
+                  className="item-quantity"
+                  type="text"
+                  id="item_name"
+                  name="item_name"
+                  value="12"
+                ></input>
+              </div>
+              <div className="table-body-cell">$12.95</div>
+              <div className="resp-table-row"></div>
+              <div className="table-body-cell">X</div>
+              <div className="table-body-cell">Image</div>
+              <div className="table-body-cell">Product</div>
+              <div className="table-body-cell">$12.95</div>
+              <div className="table-body-cell">
+                <input
+                  className="item-quantity"
+                  type="text"
+                  id="item_name"
+                  name="item_name"
+                  value="12"
+                ></input>
+              </div>
+              <div className="table-body-cell">$12.95</div>
+            </div>
+            <div id="resp-table-footer">
+              <div className="table-footer-cell"></div>
+              <div className="table-footer-cell"></div>
+              <div className="table-footer-cell"></div>
+              <div className="table-footer-cell"></div>
+              <div className="table-footer-cell">
+                <button className="add-to-cart">UPDATE CART</button>
+              </div>
+              <div className="table-footer-cell">
+                <button className="add-to-cart">EMPTY CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Cart Totals</h2>
+        </div>
+        <div className="cart-totals">
+          <div id="resp-table">
+            <div id="resp-table-body"></div>
+            <div className="resp-table-row"></div>
+            <div className="table-body-cell">Sub Total:</div>
+            <div className="table-body-cell">$ 15.00</div>
+            <div className="resp-table-row"></div>
+            <div className="table-body-cell">Tax:</div>
+            <div className="table-body-cell">$ 1.50</div>
+            <div className="resp-table-row"></div>
+            <div className="table-body-cell">Total:</div>
+            <div className="table-body-cell">$ 16.50</div>
+          </div>
+          <div id="resp-table-footer">
+            <div className="table-footer-cell">
+              <button className="add-to-cart">EMPTY CART</button>
+            </div>
+            <div className="table-footer-cell">
+              <button className="add-to-cart">EMPTY CART</button>
+            </div>
+          </div>
+        </div>
+      </div>

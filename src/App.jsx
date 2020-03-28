@@ -4,6 +4,9 @@ import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 import PizzaPage from './pages/PizzaPage'
 import CartPage from './pages/CartPage'
+import CompletePage from './pages/CompletePage'
+import CheckOutPage from './pages/CheckOutPage'
+import OrderPage from './pages/OrderPage'
 
 const App = () => {
   return (
@@ -28,6 +31,9 @@ const App = () => {
         <Route exact path="/" component={HomePage}></Route>
         <Route exact path="/pizza" component={PizzaPage}></Route>
         <Route exact path="/cart" component={CartPage}></Route>
+        <Route exact path="/complete" component={CompletePage}></Route>
+        <Route exact path="/checkout" component={CheckOutPage}></Route>
+        <Route exact path="/order" component={OrderPage}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
