@@ -624,10 +624,14 @@ footer {
   border-color: black;
 }
 
+.complete-h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .complete-container {
   width: 100%;
   text-align: center;
-  display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
   border-collapse: collapse;
@@ -899,7 +903,7 @@ footer {
 
 .divTableBody {
   width: 70%;
-  margin: 1rem 0rem 3rem 0rem;
+  margin: 2rem 0rem 3rem 0rem;
 }
 
 .divTableRowHeader {
@@ -936,4 +940,47 @@ footer {
 .divTableCellR {
   width: 20%;
   /* border: purple 1px solid; */
+}
+.divTableCellDelete {
+  width: 10%;
+
+  /* border: purple 1px solid; */
+}
+
+.divTableCellPic {
+  width: 15%;
+
+  /* border: purple 1px solid; */
+}
+.divTableCellProduct {
+  width: 35%;
+
+  /* border: purple 1px solid; */
+}
+.divTableCellPrice {
+  width: 10%;
+
+  /* border: purple 1px solid; */
+}
+
+.divTableCellQuantity {
+  width: 15%;
+
+  /* border: purple 1px solid; */
+}
+.divTableCellTotal {
+  width: 15%;
+
+  /* border: purple 1px solid; */
+}
+
+.divTableFooter {
+  display: inline-block;
+  border: lightgray 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  padding: 1rem;
 }

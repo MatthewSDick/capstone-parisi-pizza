@@ -72,6 +72,7 @@ const CheckOutPage = (props) => {
           ></input>
         </div>
       </div>
+      {/* start of table */}
       <div
         className="divTable"
         style={{ borderColor: 'black', borderStyle: '1px', color: 'white' }}
@@ -145,6 +146,7 @@ const CheckOutPage = (props) => {
           </div>
         </div>
       </div>
+      {/* end of table */}
       <Footer />
     </div>
   )
