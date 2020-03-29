@@ -16,12 +16,12 @@ body {
   background-size: cover;
 }
 
-.top>h2 {
+.top > h2 {
   color: #fac123;
   text-align: center;
 }
 
-.top>h1 {
+.top > h1 {
   color: white;
   text-align: center;
 }
@@ -168,7 +168,8 @@ body {
 
 /* Add a red background color to navbar links on hover */
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: #ff5e5e;
 }
 
@@ -201,7 +202,7 @@ body {
 }
 
 .go-home {
-  color: #FAC123;
+  color: #fac123;
   font-style: sans-serif;
   font-size: 16px;
   padding: 0;
@@ -275,11 +276,11 @@ body {
   margin-left: 6rem;
 }
 
-footer>ul>li>img {
+footer > ul > li > img {
   height: 3rem;
 }
 
-footer>h4 {
+footer > h4 {
   color: white;
   font-size: 1rem;
   padding: 1rem 0rem 1rem 2rem;
@@ -445,7 +446,7 @@ footer {
   grid-column-start: 2;
   grid-column-end: 3;
   margin-top: 0rem;
-  padding-top: 0.5rem
+  padding-top: 0.5rem;
 }
 
 .notes {
@@ -479,24 +480,27 @@ footer {
 }
 
 .toppings-left {
-  width: 18%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .toppings-whole {
-  width: 18%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .toppings-right {
-  width: 18%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .toppings-detail {
@@ -506,6 +510,7 @@ footer {
   border-style: solid;
   border-color: black;
   border-width: 1px;
+  justify-content: center;
 }
 
 .pizza-bottom p {
@@ -514,7 +519,7 @@ footer {
 
 .add-to-cart {
   color: white;
-  background-color: #CA0707;
+  background-color: #ca0707;
   height: 2.5rem;
   width: auto;
   font-size: 1rem;
@@ -541,7 +546,7 @@ footer {
 
 #resp-table-header {
   display: table-header-group;
-  background-color: #CA0707;
+  background-color: #ca0707;
   font-size: 1.3rem;
 }
 
@@ -637,7 +642,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-bottom: 1.5rem
+  margin-bottom: 1.5rem;
 }
 
 .order-page-left {
@@ -650,7 +655,7 @@ footer {
 }
 
 .order-item {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   width: 25%;
   /* width: 20rem; */
   text-align: center;
@@ -672,7 +677,7 @@ footer {
 }
 
 .cart-view {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   /* border: 1px;
   border-style: solid; */
   /* border-color: purple; */
@@ -710,7 +715,7 @@ footer {
 
 .order-add-to-cart-btn {
   color: white;
-  background-color: #548C1D;
+  background-color: #548c1d;
   height: 2.5rem;
   width: auto;
   font-size: 1rem;
@@ -725,7 +730,7 @@ footer {
 
 .order-left-button {
   color: white;
-  background-color: #CA0707;
+  background-color: #ca0707;
   height: 2.5rem;
   width: auto;
   font-size: 1rem;
@@ -734,7 +739,7 @@ footer {
 
 .order-right-button {
   color: white;
-  background-color: #CA0707;
+  background-color: #ca0707;
   height: 2.5rem;
   width: auto;
   font-size: 1rem;

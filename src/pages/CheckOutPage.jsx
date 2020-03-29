@@ -30,34 +30,21 @@ const CheckOutPage = () => {
   return (
     <div>
       <Header />
-      <form>
-        <input type="text" name="firstName" onChange="">
-          <form onSubmit={sendEmployeeToApi}>
-            <section>
-              <p>First Name</p>
-              <input
-                type="text"
-                name="firstName"
-                onChange={handleInputChange}
-              />
-            </section>
-            <section>
-              <p>Last Name</p>
-              <input type="text" name="lastName" onChange={handleInputChange} />
-            </section>
-            <section>
-              <p>Phone</p>
-              <input
-                type="tel"
-                name="phoneNumber"
-                onChange={handleInputChange}
-              />
-            </section>
-            <button>Add employee</button>
-          </form>
-        </input>
+      <form onSubmit={sendEmployeeToApi}>
+        <section>
+          <p>First Name</p>
+          <input type="text" name="firstName" onChange={handleInputChange} />
+        </section>
+        <section>
+          <p>Last Name</p>
+          <input type="text" name="lastName" onChange={handleInputChange} />
+        </section>
+        <section>
+          <p>Phone</p>
+          <input type="tel" name="phoneNumber" onChange={handleInputChange} />
+        </section>
+        <button>Add employee</button>
       </form>
-      <h1>Checkout</h1>
       <Footer />
     </div>
   )
