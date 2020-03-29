@@ -2,8 +2,9 @@ import React, { useState, useEffect, Component } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import axios from 'axios'
+import Testing from '../components/Testing'
 
-const CheckOutPage = () => {
+const CheckOutPage = (props) => {
   return (
     <div>
       <Header />
@@ -71,7 +72,79 @@ const CheckOutPage = () => {
           ></input>
         </div>
       </div>
-
+      <div
+        className="divTable"
+        style={{ borderColor: 'black', borderStyle: '1px', color: 'white' }}
+      >
+        <div className="divTableBody">
+          <div className="divTableRowHeader">
+            <div className="divTableCellL">
+              <p>Product</p>
+            </div>
+            <div className="divTableCellC">
+              <p style={{ color: '#CA0707' }}>.</p>
+            </div>
+            <div className="divTableCellR">
+              <p>Total</p>
+            </div>
+          </div>
+          {/* Looping items */}
+          <div className="divTableRow">
+            <div className="divTableCellL">
+              <p>Homemade Lasagna X 2</p>
+            </div>
+            <div className="divTableCellC">&nbsp;</div>
+            <div className="divTableCellR">
+              <p>$25.09</p>
+            </div>
+          </div>
+          {/* end looping items */}
+          <div className="divTableRow">
+            <div className="divTableCellL">
+              <p>&nbsp;</p>
+            </div>
+            <div className="divTableCellC">
+              <p>SubTotal:</p>
+            </div>
+            <div className="divTableCellR">
+              <p>$25.09</p>
+            </div>
+          </div>
+          <div className="divTableRow">
+            <div className="divTableCellL">
+              <p>&nbsp;</p>
+            </div>
+            <div className="divTableCellC">
+              <p>Tax:</p>
+            </div>
+            <div className="divTableCellR">
+              <p>$1.35</p>
+            </div>
+          </div>
+          <div className="divTableRow">
+            <div className="divTableCellL">
+              <p>&nbsp;</p>
+            </div>
+            <div className="divTableCellC">
+              <p>Total:</p>
+            </div>
+            <div className="divTableCellR">
+              <p>$26.44</p>
+            </div>
+          </div>
+          <div className="divTableRow">
+            <div className="divTableCellL">
+              <p>&nbsp;</p>
+            </div>
+            <div className="divTableCellC">
+              <p>&nbsp;</p>
+            </div>
+            <div className="divTableCellR">
+              <button className="add-to-cart">PLACE ORDER</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   )

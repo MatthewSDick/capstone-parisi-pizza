@@ -810,3 +810,130 @@ footer {
   font-size: 1rem;
   background-color: #f5f5f5;
 }
+
+/* DYNAMIC TABLE */
+
+#title {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+#students {
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+#students td,
+#students th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#students tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#students tr:hover {
+  background-color: #ddd;
+}
+
+#students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+}
+
+/* END DYNAMIC TABLE */
+
+.checkout-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.checkout-table-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.product {
+  text-align: center;
+  background-color: #ca0707;
+  color: white;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.middle {
+  background-color: #ca0707;
+  width: 10%;
+}
+
+.total {
+  text-align: center;
+  background-color: #ca0707;
+  color: white;
+  vertical-align: middle;
+  width: 10%;
+}
+
+.row {
+  width: 80%;
+}
+
+.divTable {
+  text-align: center;
+  /* border: black 1px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.divTableBody {
+  width: 70%;
+  margin: 1rem 0rem 3rem 0rem;
+}
+
+.divTableRowHeader {
+  background-color: #ca0707;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.divTableRow {
+  /* width: 70%; */
+  display: inline-block;
+  border: lightgray 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+}
+
+.divTableCellL {
+  width: 60%;
+  /* border: red 1px solid; */
+}
+
+.divTableCellC {
+  width: 20%;
+  text-align: right;
+  /* border: green 1px solid; */
+}
+
+.divTableCellR {
+  width: 20%;
+  /* border: purple 1px solid; */
+}
