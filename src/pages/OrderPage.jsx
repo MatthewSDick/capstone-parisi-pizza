@@ -18,6 +18,7 @@ const OrderPage = () => {
                 <img
                   className="order-cart-image"
                   src="./images/pepperoni-pizz.jpg"
+                  alt="Shopping cart"
                 />
               </div>
               <div className="order-cart-details">
@@ -33,6 +34,7 @@ const OrderPage = () => {
                 <img
                   className="order-cart-image"
                   src="./images/pepperoni-pizz.jpg"
+                  alt="Pepperoni Pizza"
                 />
               </div>
               <div className="order-cart-details">
@@ -65,31 +67,51 @@ const OrderPage = () => {
           <ul className="catagory-list">
             {/* map from API */}
             <li className="order-item">
-              <img className="order-image" src="./images/pepperoni-pizz.jpg" />
+              <img
+                className="order-image"
+                src="./images/pepperoni-pizz.jpg"
+                alt="Pepperoni Pizza"
+              />
               <p>Item Name</p>
               <p>$ 99.99</p>
               <button className="order-add-to-cart-btn">ADD TO CART</button>
             </li>
             <li className="order-item">
-              <img className="order-image" src="./images/pepperoni-pizz.jpg" />
+              <img
+                className="order-image"
+                src="./images/pepperoni-pizz.jpg"
+                alt="Pepperoni Pizza"
+              />
               <p>Item Name</p>
               <p>$ 99.99</p>
               <button className="order-add-to-cart-btn">ADD TO CART</button>
             </li>
             <li className="order-item">
-              <img className="order-image" src="./images/pepperoni-pizz.jpg" />
+              <img
+                className="order-image"
+                src="./images/pepperoni-pizz.jpg"
+                alt="Pepperoni Pizza"
+              />
               <p>Item Name</p>
               <p>$ 99.99</p>
               <button className="order-add-to-cart-btn">ADD TO CART</button>
             </li>
             <li className="order-item">
-              <img className="order-image" src="./images/pepperoni-pizz.jpg" />
+              <img
+                className="order-image"
+                src="./images/pepperoni-pizz.jpg"
+                alt="Pepperoni Pizza"
+              />
               <p>Item Name</p>
               <p>$ 99.99</p>
               <button className="order-add-to-cart-btn">ADD TO CART</button>
             </li>
             <li className="order-item">
-              <img className="order-image" src="./images/pepperoni-pizz.jpg" />
+              <img
+                className="order-image"
+                src="./images/pepperoni-pizz.jpg"
+                alt="Pepperoni Pizza"
+              />
               <p>Item Name</p>
               <p>$ 99.99</p>
               <button className="order-add-to-cart-btn">ADD TO CART</button>

@@ -1,50 +1,77 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Component } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import axios from 'axios'
 
 const CheckOutPage = () => {
-  const [employee, setEmployee] = useState({})
-  const handleInputChange = (e) => {
-    const fieldToUpdate = e.target.name
-    const value = e.target.value
-    console.log(fieldToUpdate, value)
-  }
-
-  const sendEmployeeToApi = async (e) => {
-    e.preventDefault()
-    const resp = await axios.post(
-      'https://sdg-staff-directory-app.herokuapp.com/api/honeydukes/Employees',
-      employee
-    )
-    console.log(resp)
-    if (resp.status === 200) {
-      // redirect page to the home
-      // BONUS can we diplay a success message
-      // setShouldRedirect(true)
-    } else {
-      //display an error message
-    }
-  }
-
   return (
     <div>
       <Header />
-      <form onSubmit={sendEmployeeToApi}>
-        <section>
-          <p>First Name</p>
-          <input type="text" name="firstName" onChange={handleInputChange} />
-        </section>
-        <section>
-          <p>Last Name</p>
-          <input type="text" name="lastName" onChange={handleInputChange} />
-        </section>
-        <section>
-          <p>Phone</p>
-          <input type="tel" name="phoneNumber" onChange={handleInputChange} />
-        </section>
-        <button>Add employee</button>
-      </form>
+      <div className="checkout-top">
+        <div className="checkout-left">
+          <h2>Billing Details</h2>
+          <p>
+            First Name<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            Last Name<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            Address<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            City<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            State<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            Zip<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            Phone<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            Email<span style={{ color: '#CA0707' }}> *</span>
+          </p>
+          <input type="text"></input>
+          <p>
+            <input
+              type="radio"
+              name="delivery-method"
+              value="pick-up"
+              classNAme="delivery-method"
+            />{' '}
+            Pick Up
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="delivery-method"
+              value="delivery"
+              classNAme="delivery-method"
+            />{' '}
+            Delivery
+          </p>
+        </div>
+        <div className="checkout-right">
+          {' '}
+          <h2>Additional Information</h2>
+          <input
+            type="text"
+            className="additional-info"
+            value="Notes about your order, e.g. special notes for delivery"
+          ></input>
+        </div>
+      </div>
+
       <Footer />
     </div>
   )

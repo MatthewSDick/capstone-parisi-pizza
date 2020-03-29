@@ -15,7 +15,7 @@ const HomePage = () => {
         <h2>Order pizza, pasta & more online for carryout or delivery</h2>
         <div class="center-images">
           <div class="left-image">
-            <img src="./images/main-pizza.jpg" />
+            <img src="./images/main-pizza.jpg" alt="pizza" />
           </div>
           <div class="welcome-message">
             <p>
@@ -29,7 +29,7 @@ const HomePage = () => {
             </p>
           </div>
           <div class="right-image">
-            <img src="./images/ziti.jpg" />
+            <img src="./images/ziti.jpg" alt="Ziti" />
           </div>
         </div>
         <div class="hours-wine">
@@ -72,7 +72,7 @@ const HomePage = () => {
           </div>
           <div class="wine">
             <h3>We have great wine selections</h3>
-            <img src="./images//wine-bottles.jpg" />
+            <img src="./images//wine-bottles.jpg" alt="Bottles of wine" />
           </div>
         </div>
         {/* Below is the div for the bottom of the center portion */}
