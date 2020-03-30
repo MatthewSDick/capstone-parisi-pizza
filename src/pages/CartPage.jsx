@@ -107,10 +107,50 @@ const CartPage = () => {
               <p></p>
             </div>
             <div className="divTableCellQuantity">
-              <button className="add-to-cart">PLACE ORDER</button>
+              <button className="add-to-cart">UPDATE CART</button>
             </div>
             <div className="divTableCellTotal">
-              <button className="add-to-cart">PLACE ORDER</button>
+              <button className="add-to-cart">EMPTY CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="divTableCartBottom"
+        style={{ borderColor: 'black', borderStyle: '1px', color: 'white' }}
+      >
+        <div className="divTableBodyCart">
+          <div className="divTableRow">
+            <div className="divTableCellCartLeft">
+              <p>Sub Total: </p>
+            </div>
+            <div className="divTableCellCartRight">
+              <p>$99.99</p>
+            </div>
+          </div>
+          <div className="divTableRow">
+            <div className="divTableCellCartLeft">
+              <p>Tax: </p>
+            </div>
+            <div className="divTableCellCartRight">
+              <p>$9.99</p>
+            </div>
+          </div>
+          <div className="divTableRow">
+            <div className="divTableCellCartLeft">
+              <p>Total: </p>
+            </div>
+            <div className="divTableCellCartRight">
+              <p>$99.99</p>
+            </div>
+          </div>
+          <div className="divTableRowCartButton">
+            {/* <div className="divTableCellCartLeft">
+              <p></p>
+            </div> */}
+            <div className="divTableCellCartButton">
+              <button className="add-to-cart">PROCEED TO CHECKOUT</button>
             </div>
           </div>
         </div>

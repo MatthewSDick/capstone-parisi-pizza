@@ -6,7 +6,7 @@ const OrderPage = () => {
   return (
     <div>
       <Header />
-      <h1>Order Page</h1>
+
       <div className="order-page">
         <div className="order-page-left">
           <div className="cart-view">
